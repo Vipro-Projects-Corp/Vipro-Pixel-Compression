@@ -1,0 +1,14 @@
+Dim sourceFile As String = "C:\path\to\source\file.txt"
+        Dim targetDirectory As String = "C:\path\to\target"
+        Dim targetFileName As String = "newfile.txt"
+
+        ' Combine the target directory and file name
+        Dim targetPath As String = Path.Combine(targetDirectory, targetFileName)
+
+        ' Copy the file to the target location and rename it
+        File.Copy(sourceFile, targetPath)
+
+        MessageBox.Show("File copied and renamed successfully.")
+
+
+await task.delay()
